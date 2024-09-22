@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/public/fonts/SFPRODISPLAYREGULAR.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url("/public/fonts/SFPRODISPLAYBOLD.otf") format("opentype");
+}
+.bg-filter {
+  backdrop-filter: blur(20px);
+}
+body {
+  font-family: "SF Pro Display";
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
