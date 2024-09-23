@@ -12,7 +12,7 @@ const App = () => {
     <div className="min-h-screen w-full relative overflow-x-hidden ">
       <Navbar />
       <Hero />
-      {/* <About /> */}
+      <About />
       <WhatWeDo />
       <Quote />
       <Executives/>
