@@ -21,16 +21,16 @@ const WhatWeDo = () => {
       <h1 className="text-[#353535] font-sfproBold text-4xl">What We Do</h1>
 
       {isInView ? (
-        <p
+        <div
           className="max-w-md mt-4  text-lg text-[rgba(53,53,53,0.60)]"
           ref={textRef}
         >
           <FlipLine>
             {`The UNESCO youth club is a community in Covenant\n University that helps young mings thrive and provide\n solutions to world problems. By providing them with a safe space to develop and share ideas amongst like minds, the\n UNESCO youth club is designed to aid growth on all levels.`}
           </FlipLine>
-        </p>
+        </div>
       ) : (
-        <p
+        <div
           className="max-w-md mt-4  text-lg text-[rgba(53,53,53,0.60)]"
           ref={textRef}
         >
@@ -39,7 +39,7 @@ const WhatWeDo = () => {
           problems. By providing them with a safe space{"\n"} to develop and
           share ideas amongst like minds, the{"\n"} UNESCO youth club is
           designed to aid growth on all levels.
-        </p>
+        </div>
       )}
       <div className="mt-24">
         {whatWeDo.map((item, index) => (

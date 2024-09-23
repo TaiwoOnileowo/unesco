@@ -42,7 +42,7 @@ export const TextGenerateEffect = ({
                 filter: filter ? "blur(10px)" : "none",
               }}
             >
-              {word} <br className={`${idx === 3 ? "block" : "hidden"}`} />
+              {word} <br className={`${idx === 3 ? "block" : "hidden"} max-md:hidden`} />
             </motion.span>
           );
         })}

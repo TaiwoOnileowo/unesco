@@ -5,12 +5,12 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <div className="min-h-screen w-full bg-black pb-16  bg-grid-white/[0.2]  relative flex flex-col items-center pt-32">
+    <div className="md:min-h-screen w-full  bg-black pb-16  bg-grid-white/[0.2]  relative flex flex-col items-center pt-32">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="mt-16 relative h-fit z-[50] flex items-center justify-center flex-col">
         <div className="relative w-fit">
           <TextGenerateEffect
-            className="text-white font-sfproBold text-5xl"
+            className="text-white font-sfproBold text-3xl lg:text-5xl max-lg:text-center"
             words={"Where young minds thrive, and problems meet solutions."}
           />
           <motion.img
@@ -19,7 +19,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             src={slash}
             alt="Slash"
-            className="absolute bottom-0 -right-10"
+            className="absolute bottom-0 -right-10 max-lg:hidden"
           />
         </div>
 
